@@ -1,0 +1,16 @@
+#coding=utf-8
+import Tkinter as tk 
+window = tk.Tk()
+window.title('My window')
+window.geometry('200x200')
+tk.Label(window,text='on the window',bg='white',width=20,height=2).pack()
+frame = tk.Frame(window)
+frame.pack()
+frame_left = tk.Frame(frame)
+frame_right = tk.Frame(frame)
+frame_left.pack(side='left')
+frame_right.pack(side='right')
+tk.Label(frame_left,text="on the left_1").pack()
+tk.Label(frame_left,text="on the left_2").pack()
+tk.Label(frame_right,text='on the right_1').pack()
+window.mainloop()
